@@ -1,0 +1,7 @@
+{
+  "name": "TAF10",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
