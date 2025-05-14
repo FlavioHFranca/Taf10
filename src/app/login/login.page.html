@@ -1,0 +1,70 @@
+<ion-header [translucent]="false">
+  
+    
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-title>
+    TAF10
+  </ion-title>
+  <ion-title>
+    Preparação Física
+  </ion-title>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card>
+    
+    <ion-card-header>
+      <div class="imgTaf">
+        <img src="../../assets/img/image 3.png" alt="Lgotipo TAF10"/>
+      </div>
+      <ion-input
+        clearInput="true"
+        size="Small"        
+        fill="outline"
+        color="primary"
+        labelPlacement="floating"
+        label="Usuário"
+        labelPlacement="floating"
+        placeholder="Digite seu usuário para entrar no sistema"
+        type="text"
+        required="true"
+        name="usuario"
+        id="usuario"
+        [(ngModel)]="usuario"
+      ></ion-input>
+      <hr>
+      <ion-input  
+        size="Small"       
+        fill="outline"
+        color="primary"
+        label="Password"
+        label-placement="floating"
+        placeholder="Agora a sua senha"
+        type="password"
+        required="true"
+        value=""
+        name="senha"
+        id="senha"
+        [(ngModel)]="senha"
+        (keyup.enter) = "login()"
+      ></ion-input>
+      <ion-text>
+        <p color="danger">{{ mensagemErro }}</p>
+      </ion-text>  
+      <ion-button
+        (click)="login()"
+        expand="full"
+        disabled="false"
+      >Entrar</ion-button>
+    </ion-card-header>
+
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
