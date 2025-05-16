@@ -1,15 +1,17 @@
 ion-title{
-  background-color: #2E2E2E;
   text-align: center;
   color: #acacac;
   box-shadow: none;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 100;
 
 }
-ion-card{
-  background-color: #3AABA9;
-  margin-top: 30px;
+ion-card-header>ion-title{
+  text-align: center;
+  color: #acacac;
+  box-shadow: none;text-shadow: #cfcfcf 0px 1px 1px;
+  font-size: 2rem;
+  font-weight: 100;
 
 }
 ion-content {
@@ -18,28 +20,21 @@ ion-content {
   ion-button {
     --background: #3AABA9;
     --color: #FFFFFF;
-  }
-  ion-input {
-    --background: #505050;
-    --margin: 10%;
-    --color: #FFFFFF;
-  }
-img{
+    margin: 30px;
+    border-radius: 10px;
 
-    width: 130px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+  }
+
+  ion-card{
+    background-color: #2e2e2eb0;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: #363636 0px 0px 2px;
+  }
+  ion-icon{
+    padding-right: 7px;
 }
 
-.imgTaf{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10%;
-}
-ion-text>p{
-    color: #fc1c1c;
-    font-size: 15px;
-    font-size: bold;
-    
+.nome_cima{
+  margin-top: 10px;
 }
