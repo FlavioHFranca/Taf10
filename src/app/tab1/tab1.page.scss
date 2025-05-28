@@ -16,6 +16,7 @@ ion-card-header>ion-title{
 }
 ion-content {
     --background: #2E2E2E;
+    
   }
   ion-button {
     --background: #3AABA9;
@@ -35,6 +36,28 @@ ion-content {
     padding-right: 7px;
 }
 
-.nome_cima{
-  margin-top: 10px;
+.logo_taf{
+  max-width: 70px;
+  margin: 10px auto;
 }
+
+.ion-padding{
+  padding: 0px;
+  margin: auto 30px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ion-padding ion-icon{
+  font-size: 1.7rem;
+  color: #acacac;
+  cursor: pointer;
+}
+ion-chip{
+  --background: #aaaaaa60;
+  --color: #FFFFFF;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+

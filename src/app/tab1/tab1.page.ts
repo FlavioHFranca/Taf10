@@ -12,19 +12,17 @@ export class Tab1Page {
   usuario : String = '';
   senha : String= '';
   mensagemErro : String ='';
-  // login() {
-  //   if (this.usuario === 'admin' && this.senha === 'admin') {
-  //     // console.log('Login bem-sucedido!');
-      
-  //     this.router.navigate(['./login']);
-  //   } else { 
-  //     this.mensagemErro = 'Usuário ou senha inválidos';
-  //     setTimeout(() => {
-  //       window.location.reload();
-  //     }, 2000);
+  Alunos(){
+    this.router.navigate(['tabs/tab2']);
+    console.log('Navegando para Alunos');
 
-  //   }
-  // }
+  }
+  Turmas(){
+    this.router.navigate(['tabs/tab3']);
+    console.log('Navegando para turmas');
+
+  }
+  
 
   Sair(){
     this.router.navigate(['./login']);

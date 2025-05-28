@@ -5,28 +5,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
-  <div class="nome_cima">
-    <ion-title>
-      TAF10
-    </ion-title>
-    <ion-title>
-      Preparação Física
-    </ion-title>
+  
+    
+  <div class="logo_taf">
+    <img src="../../assets/img/image 3.png" />
   </div>
+  
   <div class="ion-padding">
-    <h2>Olá Prof nome</h2>
-    <p>Bem-vindo(a) ao TAF10</p>
+    <ion-chip>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="../../assets/img/adm/Foto_melo.png" />
+      </ion-avatar>
+      <ion-label>ADM_NAME</ion-label>
+      
+    </ion-chip>
+    <ion-icon name="cog" (click)="Sair()"></ion-icon>
+  </div>
+    
   
   <ion-card>
-    <ion-button (click)="Sair()" size="large" expand="full">
+    <ion-button (click)="Alunos()" size="large" expand="full">
     
       <ion-icon name="people-outline"></ion-icon>
       <ion-label>Alunos</ion-label>
     </ion-button>
-    <ion-button (click)="Sair()" size="large" expand="full">
+    <ion-button (click)="Turmas()" size="large" expand="full">
     
       <ion-icon name="people-circle-outline"></ion-icon>
       <ion-label>Minhas Turmas</ion-label>
     </ion-button>
+    
   </ion-card>
+  
   
